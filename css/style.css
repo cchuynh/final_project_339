@@ -1,0 +1,292 @@
+body{
+    background-color: #F7F3F2;
+}
+nav{
+    background-color: #F6C8BE;
+    padding: 25px 0; 
+    text-align: right;
+    font-family: "IBM Plex Sans"
+}
+nav li{
+    display:inline;
+    padding-right:20px;
+  
+}
+
+nav a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none; 
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+  
+nav a:focus{
+    text-decoration: underline;
+}
+
+/* header {;
+    text-align: center;
+    background-color: #EAB7AB;
+} */
+
+h1{
+    font-family: "IBM Plex Sans";
+    text-align: center;
+}
+
+footer{
+    background-color: #EAB7AB;
+    color: black;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+    font-family: "IBM Plex Sans";
+}
+
+.about_text-block, .early_signs_text-block, .statistics_text-block, .why_text-block{
+    margin: auto;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+div.about_text-block, div.early_signs_text-block, div.statistics_text-block, div.why_text-block{
+    width: 1300px;
+    border: 1px solid black;
+}
+
+.clubs{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 100px;
+    row-gap: 100px;
+    flex-wrap: nowrap;
+}
+
+.gallery{
+    position: relative;
+    width: 350px;
+}
+
+.image{
+    display: block;
+    width: 500px;
+    height: auto;
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 500px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: pink;
+}
+  
+.gallery:hover .overlay {
+    opacity: 1;
+}
+  
+.text {
+    color: white;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-block{
+    font-size: large;
+    font-family: "IBM Plex Sans";
+    justify-content: flex-end;
+}
+
+.pulse, .wolverine, .active, .awaken, .nami, .mhealthy, .wellbeing, .a2c3, .ginsberg{
+    display: flex;
+    flex-direction: row;
+    column-gap: 200px;
+    padding: 20px;
+    border: #EAB7AB dotted 2px;
+    align-items: center;
+}
+
+/* Cecilia's code */
+
+.grid img{
+    grid-column: span 1;
+    grid-row: span 4;
+    height: 200px;
+    width: 310px;
+    align-self: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.grid p{
+    padding: 0px 115px 0px 115px;
+    text-align: justify;
+}
+
+.grid button{
+    margin: 0 auto;
+    display: block;
+    background-color: #F7F3F2;
+    color: #543E3E;
+    font-family: "IBM Plex Sans";
+    padding: 10px 115px 10px 115px;
+    font-size: medium;
+    border-radius: 100px;
+}
+
+.grid button:hover{
+    background-color: white;
+}
+
+.uhs-box, .caps-box,.togetherall-box, .psychiatry-box, .trotter-box, .campus_mind_works-box, .wolverine_wellness-box, .office_student_conflict_resolution-box, .continuum_of_care-box{
+    background-color: #EAB7AB;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 4px 4px 0px 0px rgba(168, 108, 108, 1);
+}
+
+.caps-box img {
+    background-color: #F7F3F2;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    border: 5px #F7F3F2 solid;
+    column-gap: 20px;
+    row-gap: 20px;
+    align-self: center;
+    justify-content: center;
+}
+
+
+
+@media screen and (min-width: 800px) {
+    .grid img{
+        grid-column: span 2;
+        grid-row: span 5;
+        height: 200px;
+        width: 310px;
+        align-self: center;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .grid p{
+        padding: 20px;
+        text-align: justify;
+    }
+
+    .grid button{
+        margin: 0 auto;
+        display: block;
+        background-color: #F7F3F2;
+        color: #543E3E;
+        font-family: "IBM Plex Sans";
+        padding: 20px 70px 20px 70px;
+        font-size: large;
+        border-radius: 100px;
+    }
+
+    .grid button:hover{
+        background-color: white;
+    }
+
+    .uhs-box, .caps-box,.togetherall-box, .psychiatry-box, .trotter-box, .campus_mind_works-box, .wolverine_wellness-box, .office_student_conflict_resolution-box, .continuum_of_care-box{
+        background-color: #EAB7AB;
+        justify-content: center;
+        border-radius: 20px;
+        box-shadow: 4px 4px 0px 0px rgba(168, 108, 108, 1);
+    }
+
+    .caps-box img {
+        background-color: #F7F3F2;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 350px 350px;
+        grid-template-rows: 625px 625px 625px 625px 625px;
+        border: 5px #F7F3F2 solid;
+        column-gap: 20px;
+        row-gap: 20px;
+        align-self: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .grid img{
+        grid-column: span 3;
+        grid-row: span 5;
+        height: 250px;
+        align-self: center;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .grid p{
+        padding: 20px;
+        text-align: justify;
+    }
+
+    .grid button{
+        margin: 0 auto;
+        display: block;
+        background-color: #F7F3F2;
+        color: #543E3E;
+        font-family: "IBM Plex Sans";
+        padding: 20px 70px 20px 70px;
+        font-size: large;
+        border-radius: 100px;
+    }
+
+    .grid button:hover{
+        background-color: white;
+    }
+
+    .uhs-box, .caps-box,.togetherall-box, .psychiatry-box, .trotter-box, .campus_mind_works-box, .wolverine_wellness-box, .office_student_conflict_resolution-box, .continuum_of_care-box{
+        background-color: #EAB7AB;
+        justify-content: center;
+        border-radius: 20px;
+        box-shadow: 4px 4px 0px 0px rgba(168, 108, 108, 1);
+    }
+
+    .caps-box img {
+        background-color: #F7F3F2;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 400px 400px 400px;
+        grid-template-rows: 650px 650px 650px;
+        border: 5px #F7F3F2 solid;
+        column-gap: 20px;
+        row-gap: 20px;
+        align-self: center;
+        justify-content: center;
+    }
+
+}
